@@ -1,11 +1,15 @@
 print("Ingresa tu Nombre: ")
-print("Hola" ,input(), "Bienvenido al juego")
+nombre = input()
+print(f"Hola {nombre} Bienvenido al juego")
 
 
-import readchar
+
 from readchar import readkey, key
-while true:
-    k = readchar.readkey()
-    if ord(key) == 000:
-        print(f"ingrese dato:")
+print(f"Ingresaste a un bucle {nombre}")
+
+while True:
+    res = readkey()
+    print(f"{nombre} Para salir presiona  ↑  ")
+    if res == key.UP:
+        print("Saliste del Bucle")
         break
