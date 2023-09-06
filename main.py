@@ -9,6 +9,7 @@ print(f"Ingresaste a un bucle.. {nombre}")
 
 while True:
     res = readkey()
+    print(res)
     print(f"{nombre} Para salir presiona  ↑  ")
     if res == key.UP:
         print("Saliste del Bucle")
