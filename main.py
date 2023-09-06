@@ -5,7 +5,7 @@ print(f"Hola {nombre} Bienvenido al juego")
 
 
 from readchar import readkey, key
-print(f"Ingresaste a un bucle {nombre}")
+print(f"Ingresaste a un bucle.. {nombre}")
 
 while True:
     res = readkey()
