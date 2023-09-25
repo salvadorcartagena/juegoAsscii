@@ -2,6 +2,10 @@ import os
 from typing import List, Tuple
 from readchar import readkey, key  
 
+print("Ingresa tu Nombre: ")
+nombre = input()
+print(f"Hola {nombre} Bienvenido al juego")
+
 def completar_paredes(cadena_laberinto, end):
     filas = cadena_laberinto.strip().split('\n')    
     while len(filas) < end + 1:
@@ -27,7 +31,7 @@ def mostrar_laberinto_limpiar(laberinto):
 def main_loop(mapa, posicion_inicial, posicion_final):
     px, py = posicion_inicial
     while (px, py) != posicion_final:
-        mapa[py][px] = '☻'
+        mapa[py][px] = ' '
         mostrar_laberinto_limpiar(mapa)
         teclado = readkey()
         nueva_px, nueva_py = px, py
@@ -90,3 +94,5 @@ if __name__ == "__main__":
     posicion_final = (end, end)
 
     main_loop(mapa, posicion_inicial, posicion_final)
+
+    print(f"Lo lograste {nombre} terminaste el juego")
