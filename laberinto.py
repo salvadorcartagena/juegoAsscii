@@ -31,7 +31,7 @@ def mostrar_laberinto_limpiar(laberinto):
 def main_loop(mapa, posicion_inicial, posicion_final):
     px, py = posicion_inicial
     while (px, py) != posicion_final:
-        mapa[py][px] = ' '
+        mapa[py][px] = '☻'
         mostrar_laberinto_limpiar(mapa)
         teclado = readkey()
         nueva_px, nueva_py = px, py
